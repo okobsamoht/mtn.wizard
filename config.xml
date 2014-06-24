@@ -1,5 +1,11 @@
-<?xml version='1.0' encoding='utf-8'?>
-<widget id="mtn.wizard" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "mtn.wizard"
+        version   = "1.0.0">
+
     <name>My MTN</name>
     <description>
         Un gestionnaire de comte MTN.
@@ -7,7 +13,6 @@
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Thomas BOKO
     </author>
-
     <!--
         If you do not want any permissions to be added to your app, add the
         following tag to your config.xml; you will still have the INTERNET
