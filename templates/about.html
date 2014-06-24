@@ -1,0 +1,49 @@
+<ion-view title="MAW">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <h1></h1>
+      <div class="padding">
+ <ion-slide-box on-slide-changed="slideHasChanged($index)">
+  <ion-slide>
+        <h3>Merci de m'avoir choisi pour gérer votre compte MTN!</h3>
+        <div id="logo">
+                <img src="img/logo.png">
+        </div>
+        <p>
+          Grâce a mes incentation, vos opérations seront plus facile!
+        </p>
+      <p>&nbsp;</p>
+   </ion-slide>
+
+      <!-- second slide -->
+   <ion-slide>
+       <h3>Configuration</h3>
+        
+        <div id="list">
+          <h5>Juste quelques étapes:</h5>
+          <ol>
+            <li>1 - Allez dans le menu "Mes Infos", remplissez le formulaire et enregistrez.</li>
+            <li>2 - Si vous changer régulièrement de téléphone, envoyer vos informations sur le serveur. Cela vous permettra de les récupérer n'importe quand.</li>
+            <li>3 - C'est tout!</li>
+          </ol>
+        </div>
+    </ion-slide>
+
+
+      <!-- third slide -->
+      <ion-slide>
+
+        <h3>Des questions?</h3>
+        <p>
+          Contactez nous.
+            <button class="button" onclick="window.plugins.toast.show('kjhkjhkjhkjhkj')">toast</button>
+            <button class="button" onclick="toast.show('kjhkjhkjhkjhkj')">toast</button>
+        </p>
+                           <p><input type="tel" id="tel"><button class="button" onclick="app.pickcont()">pick</button></p>
+
+      </ion-slide>
+      </ion-slide-box></div>
+  </ion-content>
+</ion-view>

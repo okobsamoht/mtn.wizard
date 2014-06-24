@@ -1,0 +1,92 @@
+<ion-view title="MAW">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <h1>Internet</h1>
+
+<div class="card">
+  <div class="item item-divider">
+    Activation Internet
+  </div>
+  <div class="item item-text-wrap">
+    <button class="button button-block button-positive">
+  Activer
+</button>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="item item-divider">
+    Forfaits Internet
+  </div>
+  <label class="item item-text-wrap item-input item-select">
+    <div class="input-label">
+      Forfaits Internet
+    </div>
+    <select>
+      <option>Blue</option>
+      <option>Green</option>
+      <option>Red</option>
+    </select>
+  </label>
+  <div class="row item">
+  <div class="col"><button class="button button-block button-positive">
+  Activer par SMS
+</button></div>
+  <div class="col"><button class="button button-block button-positive">
+  Activer par USSD
+</button></div>
+</div>
+</div>
+
+<div class="card">
+  <div class="item item-divider">
+    Statut Internet
+  </div>
+  <div class="row item item-text-wrap">
+<div class="col">
+ <button class="button button-block button-positive">
+  Par SMS
+</button></div>
+<div class="col">
+ <button class="button button-block button-positive">
+  Par USSD
+</button>
+</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="item item-divider">
+    Désactiver Forfait
+  </div>
+  <div class="row item item-text-wrap">
+<div class="col">
+ <button class="button button-block button-positive">
+  Par SMS
+</button></div>
+<div class="col">
+ <button class="button button-block button-positive">
+  Par USSD
+</button>
+</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="item item-divider">
+    Désactiver Internet
+  </div>
+  <div class="item item-text-wrap">
+    <button class="button button-block button-positive">
+  Activer
+</button>
+  </div>
+</div>
+
+
+
+  </ion-content>
+</ion-view>

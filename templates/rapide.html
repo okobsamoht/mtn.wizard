@@ -1,0 +1,162 @@
+<ion-view title="MAW">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <h1>Services plus</h1>
+<ion-slide-box on-slide-changed="slideHasChanged($index)">
+  <ion-slide>
+       
+<div class="card">
+  <div class="item item-divider">
+    Crédit
+  </div>
+  <div class="item item-text-wrap">
+    <button class="button button-block button-positive" onclick="app.appel('*124%23')">
+  Mon solde
+</button>
+  </div>
+  <div class="item item-text-wrap">
+ <div class="list">
+  <label class="item item-input">
+    <span class="input-label">Code de recharge</span>
+    <input type="number" id="coderecharge" placeholder="ex: 4321456587452">
+  </label>
+</div>
+<button class="button button-block button-positive" onclick="app.appel('*125*'+$('#coderecharge').val()+'%23')">
+  Recharger
+</button>
+  </div>
+</div>
+    
+</ion-slide>
+  <ion-slide>
+<div class="card">
+  <div class="item item-divider">
+    Déblockage compte de recharge
+  </div>
+  <div class="item item-text-wrap">
+ <div class="list">
+  <label class="item item-input">
+    <span class="input-label">Nouvelle recharge</span>
+    <input type="number" id="nrecharge" placeholder="ex: 4359874032521">
+  </label>
+</div>
+<button class="button button-block button-positive"  onclick="app.appel('*189*'+$('#nrecharge').val()+'%23')">
+  Activer
+</button>
+  </div>
+</div>
+  </ion-slide>
+  <ion-slide>
+<div class="card">
+  <div class="item item-divider">
+    MTN Zone
+  </div>
+  <div class="item item-text-wrap">
+ <div class="button-bar">
+<button class="button button-block button-positive" onclick="app.appel('*135*1%23')">
+  Activer
+</button>
+     <button class="button button-block button-positive" onclick="app.appel('*135*9%23')">
+  Désactivation
+</button>
+     </div>
+<div class="button-bar">
+    <button class="button button-block button-positive" onclick="app.appel('*135*2%23')">
+  Infos
+</button>
+    <button class="button button-block button-positive" onclick="app.appel('*135*3%23')">
+  Tarifs
+</button>
+</div>
+<div class="button-bar">
+    <button class="button button-block button-positive" onclick="app.appel('*135*4%23')">
+  Infos Service
+</button>
+    <button class="button button-block button-positive" onclick="app.appel('*135*5%23')">
+  Aide
+</button>
+  </div></div>
+</div>
+
+  </ion-slide>
+  <ion-slide>
+<div class="card">
+  <div class="item item-divider">
+    Boite Vocale
+  </div>
+  <div class="item item-text-wrap">
+    <button class="button button-block button-positive" onclick="app.appel('121')">
+  Consulter
+</button>
+  </div>
+</div>
+
+  </ion-slide>
+  <ion-slide>
+<div class="card">
+  <div class="item item-divider">
+    MTN ZIK
+  </div>
+  <div class="item item-text-wrap">
+<div class="button-bar">
+<button class="button button-block button-positive" onclick="app.sms('7128','mtnzik')">
+  Activer
+</button>
+ <button class="button button-block button-positive" onclick="app.sms('7128','stop')">
+  Me désinscrire
+</button>    
+    </div>
+      
+    <button class="button button-block button-positive" onclick="app.sms('7128','mazik')">
+  Mes ZIKS
+</button>
+    <button class="button button-block button-positive" onclick="app.sms('7128','topzik')">
+  TOP 10 Tonalités
+</button>
+    <button class="button button-block button-positive" onclick="app.sms('7128','aide')">
+  Aide
+</button>
+  </div>
+      </div>
+
+  </ion-slide>
+  <ion-slide>
+<div class="card">
+  <div class="item item-divider">
+    Pas de crédit
+  </div>
+  <div class="item item-text-wrap">
+ <div class="list">
+  <label class="item item-input">
+    <span class="input-label">Numéro</span>
+    <input type="tel" id="numbip" placeholder="ex: 97409633">
+  </label>
+</div>
+<div class="button-bar">
+<button class="button button-block button-positive" onclick="app.appel('*151*'+$('#numbip').val()+'%23')">
+  Rappel
+</button>
+<button class="button button-block button-positive" onclick="app.appel('*105*'+$('#numbip').val()+'%23')">
+  Pay My Call
+</button>
+</div>
+<div class="button-bar">
+<button class="button button-block button-positive" onclick="app.appel('*185*200*%23')">
+  Passer 200FCFA
+</button>
+<button class="button button-block button-positive" onclick="app.appel('*185*350*%23')">
+  Passer 350FCFA
+</button>
+<button class="button button-block button-positive" onclick="app.appel('*185*500*%23')">
+  Passer 500FCFA
+</button></div>
+  </div>
+</div>
+  </ion-slide>
+    
+</ion-slide-box>
+      
+    </ion-content>
+</ion-view>

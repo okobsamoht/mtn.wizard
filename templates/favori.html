@@ -1,0 +1,41 @@
+
+<ion-view title="MAW">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <h1>Mes N° favoris</h1>
+
+ <div class="card">
+  <div class="item item-divider">
+    Ajouter ou supprimer un numéro favori
+  </div>
+  <label class="item item-input">
+    <span class="input-label">Numéro</span>
+    <input type="text" placeholder="ex: 97409633">
+  </label>
+  <div class="item row">
+  <div class="col"><div class="button-bar">
+  <button class="button button-positive">Ajouter</button>
+  <button class="button button-assertive">Supprimer</button>
+</div>
+</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="item item-divider">
+    Liste de mes numéros favoris
+  </div>
+  <div class="item item-text-wrap">
+    <button class="button button-block button-positive" onclick="app.appel('*180%23')">
+  Lister
+</button>
+  </div>
+</div>
+
+
+    
+    
+</ion-content>
+</ion-view>
